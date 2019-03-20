@@ -141,7 +141,7 @@ namespace Microsoft.AspNetCore.Mvc.Formatters.Json
                 throw new ArgumentOutOfRangeException(nameof(count));
             }
 
-            if (offset <= 0)
+            if (offset < 0)
             {
                 throw new ArgumentOutOfRangeException(nameof(offset));
             }
